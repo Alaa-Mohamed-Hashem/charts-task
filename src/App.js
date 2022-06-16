@@ -6,12 +6,16 @@ import Gender from './components/charts/Gender';
 import AgeChart from './components/charts/AgeChart';
 import CountryChart from './components/charts/CountryChart';
 import RegisteredDate from './components/charts/RegisteredDate';
+import ArrayTask from './components/arrayTask/ArrayTask';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Switch>
+        <Route path='/array'>
+          <ArrayTask />
+        </Route>
         <Route path='/users'>
           <Users />
         </Route>
